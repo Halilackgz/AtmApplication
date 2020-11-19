@@ -56,10 +56,10 @@ def context():
     i = 0
     kullancı=list()
 
-    while i < 3:
-        veri = obj[i].split(",")
-        kullancı.append(veri)
-        i+=1
+    for i in obj :
+        veri = i.split(",")
+        kullanıcı.append(veri)
+        
     return kullancı
 
 def uptadeContext(kullanıcıbilgi):
